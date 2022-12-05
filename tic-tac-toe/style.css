@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-size: 20px;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-color: rgb(32, 32, 32);
+  background-image: url("https://janschreiber.github.io/img2/black-chalk.jpg");
+  color: rgb(230, 230, 230);
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  position: relative;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player {
+  font-size: 20px;
+}
+h2 {
+  font-size: 200%;
+}
+.cards {
+  display: flex;
+  width: 420px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.card__item {
+  border: solid 3px rgb(255, 255, 255);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #ebffff;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3), 0 0px 5px #fff, 0 0 10px #c5c7ca,
+    0 0 20px #b9bcbe;
+  transition: 0.5s;
+}
+@media (max-width: 420px) {
+  .cards {
+    width: 360px;
+  }
+  .card__item {
+    width: 120px;
+    height: 120px;
+  }
+}
+.card__item:hover {
+  background-color: rgb(50, 50, 50);
+}
+.text__player {
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.player-x {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.player-o {
+  font-weight: 600;
+  color: rgba(236, 6, 6, 0.932);
+}
+.result-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  line-height: 32px;
+  background-color: rgb(32, 32, 32);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+@media (max-width: 420px) {
+  .result-block {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.result-block.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.result-winner.active,
+.result-tie.active {
+  display: flex;
+}
+.result-winner {
+  display: none;
+}
+.result-tie {
+  display: none;
+}
+.result-block p {
+  margin: 30px 0;
+}
+.winner {
+  font-weight: 900;
+  font-size: 32px;
+}
+#steps {
+  font-weight: 900;
+  font-size: 32px;
+}
+@media (max-width: 420px) {
+  .winner,
+  #steps {
+    font-size: 26px;
+  }
+}
+button {
+  padding: 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media (max-width: 420px) {
+  button {
+    padding: 10px;
+  }
+}
+button:hover {
+  background-color: rgb(134, 134, 134);
+}
+.results-table {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.results-table p {
+  text-decoration: underline;
+}
+.footer__block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1440px;
+  padding: 20px;
+}
+.footer-data {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  padding-right: 20px;
+  line-height: 50px;
+}
+.year {
+  line-height: 50px;
+}
+.rs-logo-link {
+  width: 120px;
+}
+.rs-link img {
+  width: 100%;
+  height: 100%;
+}
+.github-username,
+.rs-logo-link {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+.github-username:hover,
+.rs-logo-link:hover {
+  color: rgb(134, 134, 134);
+}

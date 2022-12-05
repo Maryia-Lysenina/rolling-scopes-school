@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&family=Merriweather:wght@700&family=Poppins&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon (1).ico">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<div class="container">
+    <audio source src="./sound.mp3" type="audio/mp3" autoplay="true"></audio>
+    <section>
+        <h2>Tic Tac Toe</h2>
+        <p class="text__player">Waiting player <span class="player">X</span>...</p>
+        <div class="cards">
+            <div class="card__item" data-number="1"></div>
+            <div class="card__item" data-number="2"></div>
+            <div class="card__item" data-number="3" ></div>
+            <div class="card__item" data-number="4"></div>
+            <div class="card__item" data-number="5"></div>
+            <div class="card__item" data-number="6"></div>
+            <div class="card__item" data-number="7"></div>
+            <div class="card__item" data-number="8"></div>
+            <div class="card__item" data-number="9"></div>
+        </div>
+       <div class="result-block"> 
+           <p class="result-winner">Team &nbsp;<span class="winner"></span> &nbsp; has WON with &nbsp;<span id="steps"></span>&nbsp; steps!<br> My congratulations!</p>
+           <p class="result-tie">Unfortunately there are no winners.</p>
+           <button class ='button'>PLAY AGAIN</button>
+        </div>
+        <div class="results-table"><p> Dashboard:</p>
+            <ol class="list">
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__block">
+            <div class="footer-data">
+              <p class="copyright">©</p>
+              <p class="year">2022</p>
+              <a class="github-username" href="https://github.com/Maryia-Lysenina" target="_blank" rel="noopener noreferrer">github</a>
+            </div>
+            <div class="rs-logo-link">
+                <a class="rs-link" href="https://rs.school/js/">
+                    <img src="./rs_logo.svg" alt="logo">
+                </a>
+            </div>
+          </div>
+    </footer>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
