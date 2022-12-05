@@ -60,7 +60,7 @@ function startGame(event){
             cards.removeEventListener('click', startGame);
             result.classList.add('active');   
             resTie.classList.add('active');
-            audio.src = "./tie.mp3";
+            audio.src = "./assets/tie.mp3";
             audio.play();   
             draw = true; 
             return draw;
@@ -86,7 +86,7 @@ function sumWinData(data){
             winner('X')
             result.classList.add('active');
             resWinner.classList.add('active');
-            audio.src = "./winner.mp3";
+            audio.src = "./assets/winner.mp3";
             audio.play();
             steps.innerHTML = countClick - Math.floor(countClick/2);
             tX = true; 
@@ -97,7 +97,7 @@ function sumWinData(data){
             winner('O')
             result.classList.add('active');
             resWinner.classList.add('active');
-            audio.src = "./winner.mp3";
+            audio.src = "./assets/winner.mp3";
             audio.play();
             steps.innerHTML = countClick - Math.floor(countClick/2);
             tO = true; 
